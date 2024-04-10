@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "abs-cmp-template"
+version = "0.1.0"
+description = "A template for Audiobookshelf Custom Metadata Providers"
+authors = ["FlyinPancake <36113055+FlyinPancake@users.noreply.github.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.110.1"
+pydantic = "^2.6.4"
+
+
+[tool.poetry.group.dev.dependencies]
+uvicorn = "^0.29.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
