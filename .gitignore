@@ -159,4 +159,4 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-custom_metadata_provider/app_data.sqlite
+app_data.sqlite

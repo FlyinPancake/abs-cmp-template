@@ -60,10 +60,10 @@ class BookMetadata(BaseModel):
             "https://m.media-amazon.com/images/G/02/apparel/rcxgs/tile._CB483369956_.gif"
         ],
     )
-    isbn: str | None = Field(
+    isbn: ISBN | None = Field(
         None,
-        description="The ISBN of the book",
-        examples=["9780062662619", "9781640637267"],
+        description="The ISBN-13 of the book",
+        examples=[ISBN("9780062662619"), ISBN("9781640637267")],
     )
     asin: str | None = Field(
         None, description="The ASIN of the book", examples=["B07D2CJL5V", "B07V7W9KJ8"]

@@ -29,7 +29,7 @@ async def _search(
                 published_year="2007",
                 description="I have stolen princesses back from sleeping barrow kings. I burned down the town of Trebon. I have spent the night with Felurian and left with both my sanity and my life. I was expelled from the University at a younger age than most people are allowed in. I tread paths by moonlight that others fear to speak of during day. I have talked to",
                 cover="https://m.media-amazon.com/images/G/02/apparel/rcxgs/tile._CB483369956_.gif",
-                isbn="978-3-16-148410-0",
+                isbn=ISBN("8090273416"),
                 asin="B07D2CJL5V",
                 genres=["Fantasy", "Historical Fiction"],
                 tags=["magic", "historical"],
