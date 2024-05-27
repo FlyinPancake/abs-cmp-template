@@ -15,6 +15,15 @@
         }
     },
     "features": {
-        "ghcr.io/guiyomh/features/just:0": {}
+        "ghcr.io/guiyomh/features/just:0": {
+            "version": "latest"
+        },
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {
+            "azureDnsAutoDetection": true,
+            "installDockerBuildx": true,
+            "installDockerComposeSwitch": true,
+            "version": "latest",
+            "dockerDashComposeVersion": "none"
+        }
     }
 }

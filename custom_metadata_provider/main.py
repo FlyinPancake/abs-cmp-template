@@ -1,14 +1,20 @@
-import database
-import models
-from data import BooksResponse
+import logging
+import sys
+
 from fastapi import Depends, FastAPI
-from search import search_with_cache
 from sqlalchemy.orm import Session
+
+from . import database, models
+from .data import BooksResponse
+from .search import search_with_cache
 
 models.Base.metadata.create_all(bind=database.sqla_engine)
 
 
 app = FastAPI()
+
+logger = logging.getLogger("uvicorn.error")
+logger.setLevel(logging.INFO)
 
 
 # Dependency

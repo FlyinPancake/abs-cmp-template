@@ -1,11 +1,11 @@
 import datetime
-from pprint import pprint
 
-from data import BookMetadata, BooksResponse, Series
-from models import Book, SearchResult
 from pydantic_extra_types.isbn import ISBN
 from sqlalchemy import text
 from sqlalchemy.orm import Session
+
+from .data import BookMetadata, BooksResponse, Series
+from .models import Book, SearchResult
 
 
 async def _search(
@@ -74,7 +74,6 @@ async def _cache_search_result(
     dsids = [
         row[0] for row in db.execute(text("SELECT datasource_id FROM books")).fetchall()
     ]
-    pprint(dsids)
     books = [
         Book(
             datasource_id=datasource_id,

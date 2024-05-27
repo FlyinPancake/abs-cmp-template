@@ -15,10 +15,8 @@ pydantic-extra-types = "^2.7.0"
 
 
 [tool.poetry.group.dev.dependencies]
-uvicorn = "^0.29.0"
 ruff = "^0.4.5"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
-

@@ -4,4 +4,9 @@ default:
 dev:
     #!/bin/sh
     cd {{justfile_directory()}}/custom_metadata_provider
-    uvicorn main:app --reload
+    fastapi dev
+
+run:
+    #!/bin/sh
+    cd {{justfile_directory()}}/custom_metadata_provider
+    fastapi run

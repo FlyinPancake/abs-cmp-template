@@ -1,6 +1,5 @@
 from datetime import UTC, datetime
 
-from database import Base
 from sqlalchemy import (
     JSON,
     Column,
@@ -11,6 +10,8 @@ from sqlalchemy import (
     Table,
 )
 from sqlalchemy.orm import Mapped, relationship
+
+from .database import Base
 
 search__books = Table(
     "search__books",
