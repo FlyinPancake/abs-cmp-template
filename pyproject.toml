@@ -15,7 +15,7 @@ pydantic-extra-types = "^2.7.0"
 
 
 [tool.poetry.group.dev.dependencies]
-ruff = "^0.4.5"
+ruff = "^0.4.10"
 
 [build-system]
 requires = ["poetry-core"]
